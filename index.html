@@ -1,0 +1,127 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+    <script
+            src="https://code.jquery.com/jquery-1.12.4.min.js"
+    ></script>
+    <title></title>
+</head>
+<body>
+<div class="l-container">
+    <section class="c-menu" id="js-menu">
+        <div class="c-menu__header">
+            <div class="c-menu__icons">
+                <i class="zmdi zmdi-close m-close-icon" id="js-close-menu"></i>
+            </div>
+
+            <div class="c-user">
+                <img src="http://lorempixel.com/400/200/people/" class="c-avatar"/>
+                <div class="c-user__name">Daniel Rodes</div>
+                <div class="c-user__role">Product Manager</div>
+            </div>
+        </div>
+        <div class="c-menu__search">
+            <div class="c-search">
+                <i class="zmdi zmdi-search c-search__icon"></i>
+                <input type="text" placeholder="Search" class="c-search__input"/>
+            </div>
+        </div>
+        <div class="c-menu__projects">
+            <!--<div class="c-menu__add_project">Add project</div>-->
+            <ul class="l-projects">
+                <li class="c-project is-open">
+                    <div class="c-project__title">
+                        <i class="zmdi zmdi-collection-item c-project__icon"></i>
+                        <span>Nike Project</span>
+                    </div>
+                    <div class="c-project__folder">
+                        <ul class="l-project-folders">
+                            <li class="c-project-folder is-selected">
+                                <div class="c-project-folder__meta c-coral"></div>
+                                <div class="c-project-folder__title">All Tasks</div>
+                            </li>
+                            <li class="c-project-folder">
+                                <div class="c-project-folder__meta c-blue"></div>
+                                <div class="c-project-folder__title">People</div>
+                            </li>
+                            <li class="c-project-folder">
+                                <div class="c-project-folder__meta c-orange"></div>
+                                <div class="c-project-folder__title">Files</div>
+                                <!--<div class="c-project-folder__count">52</div>-->
+                            </li>
+                            <li class="c-project-folder">
+                                <div class="c-project-folder__meta c-blue"></div>
+                                <div class="c-project-folder__title">Stats</div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="c-project">
+                    <div class="c-project__title">
+                        <i class="zmdi zmdi-collection-item c-project__icon"></i>
+                        <span>Personal Project</span>
+                    </div>
+                    <div class="c-project__folder">
+                        <ul class="l-project-folders">
+                            <li class="c-project-folder is-selected">
+                                <div class="c-project-folder__meta u-coral"></div>
+                                <div class="c-project-folder__title">All Tasks</div>
+                            </li>
+                            <li class="c-project-folder">
+                                <div class="c-project-folder__meta u-blue"></div>
+                                <div class="c-project-folder__title">People</div>
+                            </li>
+                            <li class="c-project-folder">
+                                <div class="c-project-folder__meta c-orange"></div>
+                                <div class="c-project-folder__title">Files</div>
+                                <!--<div class="c-project-folder__count">52</div>-->
+                            </li>
+                            <li class="c-project-folder">
+                                <div class="c-project-folder__meta c-blue"></div>
+                                <div class="c-project-folder__title">Stats</div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </section>
+    <section class="l-main">
+        <div class="l-open-menu-container">
+            <i class="zmdi zmdi-menu menu-icon" id="js-open-menu"></i>
+            Menu
+        </div>
+        <div class="c-header">
+
+            <div class="c-header__date">
+                <div class="c-date">
+                    <i class="zmdi zmdi-calendar c-date__icon"></i>
+                    <div class="c-date__text"> 16 August 2017</div>
+                </div>
+            </div>
+            <div class="c-actions">
+                <div class="c-notification">
+                    <div class="c-notification__count">6</div>
+                    <i class="zmdi zmdi-notifications c-notification__icon"></i>
+                </div>
+                <button class="c-button__primary">Add Task</button>
+            </div>
+        </div>
+
+        <div class="l-tasks-container">
+            <ul class="l-tasks" id="js-tasks-container">
+            </ul>
+        </div>
+    </section>
+</div>
+<script src="http://localhost:3232/bundle.js"></script>
+</body>
+</html>
